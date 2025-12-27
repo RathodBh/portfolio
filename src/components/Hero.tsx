@@ -134,7 +134,7 @@ const Hero = () => {
 
         <motion.a
           href="#about"
-          className="absolute bottom-10 left-[calc(50%-16px)] transform -translate-x-1/2"
+          className="absolute bottom-20 md:bottom-10 left-[calc(50%-16px)] transform -translate-x-1/2"
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >

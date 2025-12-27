@@ -18,9 +18,9 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8 md:mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-5 md:mb-6">
             About <span className="text-blue-400">Me</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mb-8"></div>
@@ -70,7 +70,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+            className="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-6"
           >
             {skills.map((skill, index) => (
               <motion.div
@@ -80,15 +80,15 @@ const About = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
-                className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300"
+                className="bg-gray-800/50 backdrop-blur-sm p-3 md:p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300"
               >
-                <div className="text-blue-400 mb-4">{skill.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{skill.name}</h3>
+                <div className="text-blue-400 mb-2 md:mb-4">{skill.icon}</div>
+                <h3 className="text-md md:text-xl font-semibold mb-3">{skill.name}</h3>
                 <div className="space-y-2">
                   {skill.techs.map((tech) => (
                     <span
                       key={tech}
-                      className="inline-block bg-gray-700 text-sm px-3 py-1 rounded-full mr-2 mb-2"
+                      className="inline-block bg-gray-700 text-xs md:text-sm px-3 py-1 rounded-full mr-1 md:mr-2 md:mb-2"
                     >
                       {tech}
                     </span>

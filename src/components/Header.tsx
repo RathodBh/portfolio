@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
@@ -28,10 +28,10 @@ const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-gray-800 border-b ${
         isScrolled
-          ? 'bg-gray-900/10 backdrop-blur-[8px] border-b border-gray-800'
-          : 'bg-blue-900/5 border-b border-gray-800'
+          ? 'bg-gray-900/10 backdrop-blur-[8px]'
+          : 'bg-blue-900/5 backdrop-blur-[8px] md:backdrop-blur-[0px]'
       }`}
     >
       <nav className="container mx-auto px-6 py-4">
@@ -78,7 +78,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="block py-2 text-gray-300 hover:text-white transition-colors duration-300"
+                className="block py-2 text-gray-300 hover:text-white transition-colors duration-300 text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}
