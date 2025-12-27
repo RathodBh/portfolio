@@ -16,7 +16,7 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Featured <span className="text-blue-400">Projects</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mb-8"></div>
@@ -54,7 +54,7 @@ const Projects = () => {
                   </motion.div>
                 </div>
                 
-                <div className="p-6">
+                <div className="p-3 md:p-6">
                   <h3 className="text-xl font-bold mb-3 group-hover:text-blue-400 transition-colors">
                     {project.title}
                   </h3>
@@ -92,14 +92,6 @@ const Projects = () => {
                         <ExternalLink size={16} />
                       </motion.a>
                     )}
-                    {/* <motion.button
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      className="p-2 bg-gray-700 text-gray-300 rounded-lg hover:bg-gray-600 transition-colors"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <Github size={16} />
-                    </motion.button> */}
                   </div>
                 </div>
               </div>
@@ -143,7 +135,7 @@ const Projects = () => {
                         </button>
                       </div>
                       
-                      <div className="p-8">
+                      <div className="p-3 md:p-8">
                         <div className="flex items-center mb-4">
                           <div className="text-blue-400 mr-4"><project.icon className='w-8 h-8' /></div>
                           <h3 className="text-3xl font-bold">{project.title}</h3>
@@ -194,13 +186,6 @@ const Projects = () => {
                               <span>Visit Website</span>
                             </motion.a>
                           )}
-                          {/* <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            className="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-lg font-semibold flex items-center space-x-2 transition-colors"
-                          >
-                            <Github size={20} />
-                            <span>View Code</span>
-                          </motion.button> */}
                         </div>
                       </div>
                     </div>
