@@ -77,7 +77,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Passionate Full Stack Developer with 2.5 years of experience crafting 
+            Passionate Full Stack Developer with 2.6 years of experience crafting 
             innovative web solutions using MERN stack. Currently building amazing 
             products at esparkBiz in Ahmedabad.
           </motion.p>
@@ -97,7 +97,8 @@ const Hero = () => {
               Get In Touch
             </motion.a>
             <motion.a
-              href="/resume.pdf"
+              href="/Bhavesh_rathod_resume.pdf"
+              download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="border-2 border-gray-500 px-8 py-3 rounded-full font-semibold hover:border-white hover:bg-white hover:text-gray-900 transition-all duration-300"
@@ -126,7 +127,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.div
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-10 left-[calc(50%-16px)] transform -translate-x-1/2"
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >

@@ -29,25 +29,57 @@ export const HERO_SOCIAL_MEDIA: THeroSocialMedia[] = [
 export const PROJECTS: TProject[] = [
   {
     id: 1,
-    title: "BlueMind",
+    title: "CHAIN-IT",
     description:
-      "Financial advisor automation platform for client task management with API automation.",
+      "Blockchain-based digital locker solution providing security for documents with personal verification.",
     fullDescription:
-      "BlueMind is a comprehensive financial advisor automation platform that streamlines client task management through intelligent API automation. The platform enables financial advisors to automate routine tasks, manage client portfolios, and provide personalized financial guidance efficiently.",
-    icon: Zap,
-    technologies: ["React.js", "Node.js", "Sequelize", "MySQL"],
-    website: "https://bluemind.app/",
+      "CHAIN-IT is a revolutionary blockchain-based digital locker system that provides unparalleled security for important documents. Similar to DigiLocker but built on blockchain technology, it ensures document authenticity through personal verification and cryptographic security.",
+    icon: Shield,
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "TypeORM",
+      "Nx Monorepo",
+    ],
     image:
-      "https://images.pexels.com/photos/7567554/pexels-photo-7567554.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=800",
+    website: "https://chainit.com",
     features: [
-      "Automated client task management",
-      "API integration for financial data",
-      "Real-time portfolio tracking",
-      "Customizable advisor dashboard",
+      "Blockchain document storage",
+      "Personal document verification",
+      "Secure access controls",
+      "Clean architecture implementation",
     ],
   },
   {
     id: 2,
+    title: "LoyalList",
+    description:
+      "Customer relationship management platform with task management and automated bulk email/SMS features.",
+    fullDescription:
+      "Customer relationship management platform with task management and automated bulk email/SMS features.",
+    icon: Zap,
+    technologies: [
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "Hasura",
+      "GraphQL",
+    ],
+    image:
+      "https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?_gl=1*m8s520*_ga*MTAyMjIzMjU1NS4xNzY2ODM5ODEz*_ga_8JE65Q40S6*czE3NjY4Mzk4MTIkbzEkZzEkdDE3NjY4Mzk4NzgkajYwJGwwJGgw",
+    website: "https://app.loyallist.com",
+    features: [
+      "Customer Relationship Management (CRM)",
+      "Task Management",
+      "Automated bulk send emails",
+      "Automated bulk send SMS",
+    ],
+  },
+  {
+    id: 3,
     title: "IKnowa",
     description:
       "Property platform connecting property owners with contractors for home-related work and price estimation.",
@@ -73,29 +105,22 @@ export const PROJECTS: TProject[] = [
     ],
   },
   {
-    id: 3,
-    title: "CHAIN-IT",
+    id: 4,
+    title: "BlueMind",
     description:
-      "Blockchain-based digital locker solution providing security for documents with personal verification.",
+      "Financial advisor automation platform for client task management with API automation.",
     fullDescription:
-      "CHAIN-IT is a revolutionary blockchain-based digital locker system that provides unparalleled security for important documents. Similar to DigiLocker but built on blockchain technology, it ensures document authenticity through personal verification and cryptographic security.",
-    icon: Shield,
-    technologies: [
-      "React.js",
-      "TypeScript",
-      "Node.js",
-      "PostgreSQL",
-      "TypeORM",
-      "Nx Monorepo",
-    ],
+      "BlueMind is a comprehensive financial advisor automation platform that streamlines client task management through intelligent API automation. The platform enables financial advisors to automate routine tasks, manage client portfolios, and provide personalized financial guidance efficiently.",
+    icon: Zap,
+    technologies: ["React.js", "Node.js", "Sequelize", "MySQL"],
+    website: "https://bluemind.app/",
     image:
-      "https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=800",
-    website: "https://chainit.com",
+      "https://images.pexels.com/photos/7567554/pexels-photo-7567554.jpeg?auto=compress&cs=tinysrgb&w=800",
     features: [
-      "Blockchain document storage",
-      "Personal document verification",
-      "Secure access controls",
-      "Clean architecture implementation",
+      "Automated client task management",
+      "API integration for financial data",
+      "Real-time portfolio tracking",
+      "Customizable advisor dashboard",
     ],
   },
 ];

@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { ExternalLink, Github, Monitor } from 'lucide-react';
+import { ExternalLink, Monitor } from 'lucide-react';
 import { useState } from 'react';
 import { PROJECTS } from '../data/data';
 
@@ -194,13 +194,13 @@ const Projects = () => {
                               <span>Visit Website</span>
                             </motion.a>
                           )}
-                          <motion.button
+                          {/* <motion.button
                             whileHover={{ scale: 1.05 }}
                             className="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-lg font-semibold flex items-center space-x-2 transition-colors"
                           >
                             <Github size={20} />
                             <span>View Code</span>
-                          </motion.button>
+                          </motion.button> */}
                         </div>
                       </div>
                     </div>

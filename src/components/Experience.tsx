@@ -48,7 +48,7 @@ const Experience = () => {
                 </div>
                 <div className="flex items-center text-gray-400">
                   <Calendar size={20} className="mr-2" />
-                  <span>2022 - Present (2.5 years)</span>
+                  <span>2022 - Present (2.6 years)</span>
                 </div>
                 <div className="flex items-center text-gray-400">
                   <MapPin size={20} className="mr-2" />

@@ -35,7 +35,7 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate Full Stack Developer with 2.5 years of experience in building 
+              I'm a passionate Full Stack Developer with 2.6 years of experience in building 
               robust web applications. Currently working at <span className="text-blue-400 font-semibold mr-1">esparkBiz</span> 
               in Ahmedabad, I specialize in the MERN stack and have a strong background in 
               modern web technologies.
@@ -48,7 +48,7 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4 pt-6">
               <div>
                 <h4 className="text-blue-400 font-semibold mb-2">Experience</h4>
-                <p className="text-gray-300">2.5 Years</p>
+                <p className="text-gray-300">2.6 Years</p>
               </div>
               <div>
                 <h4 className="text-blue-400 font-semibold mb-2">Location</h4>
