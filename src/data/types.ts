@@ -18,3 +18,6 @@ export type TProject = {
   image: string;
   features: string[];
 };
+
+export type TSkill = { icon: LucideIcon , name: string, techs: string[] };
+  

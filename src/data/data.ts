@@ -1,5 +1,5 @@
-import { Github, Linkedin, Mail, Zap, Home, Shield } from "lucide-react";
-import { THeroSocialMedia, TProject } from "./types";
+import { Code, Database, Github, Globe, Home, Linkedin, Mail, Server, Shield, Zap } from "lucide-react";
+import { THeroSocialMedia, TProject, TSkill } from "./types";
 
 export const linkedinUrl = `https://www.linkedin.com/in/bhavesh-rathod-b48b0b196/`;
 export const githubUrl = `https://github.com/RathodBh`;
@@ -37,8 +37,10 @@ export const PROJECTS: TProject[] = [
     icon: Shield,
     technologies: [
       "React.js",
+      "Next.js",
       "TypeScript",
       "Node.js",
+      "Microservices",
       "PostgreSQL",
       "TypeORM",
       "Nx Monorepo",
@@ -123,4 +125,11 @@ export const PROJECTS: TProject[] = [
       "Customizable advisor dashboard",
     ],
   },
+];
+
+export const skills: TSkill[] = [
+  { icon: Code , name: 'Frontend', techs: ['React.js', 'Vue.js', 'TypeScript', 'Tailwind CSS'] },
+  { icon: Server , name: 'Backend', techs: ['Node.js', 'NestJS', 'Express.js', 'REST APIs'] },
+  { icon: Database , name: 'Database', techs: ['MongoDB', 'PostgreSQL', 'MySQL', 'TypeORM'] },
+  { icon: Globe , name: 'Tools & Others', techs: ['Git', 'GitHub', 'VS Code', 'Postman', 'AWS'] },
 ];

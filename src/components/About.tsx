@@ -1,14 +1,7 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Database, Server, Globe } from 'lucide-react';
+import { skills } from '../data/data';
 
 const About = () => {
-  const skills = [
-    { icon: <Code size={40} />, name: 'Frontend', techs: ['React.js', 'Vue.js', 'TypeScript', 'Tailwind CSS'] },
-    { icon: <Server size={40} />, name: 'Backend', techs: ['Node.js', 'NestJS', 'Express.js', 'REST APIs'] },
-    { icon: <Database size={40} />, name: 'Database', techs: ['MongoDB', 'PostgreSQL', 'MySQL', 'TypeORM'] },
-    { icon: <Globe size={40} />, name: 'Tools & Others', techs: ['Git', 'GitHub', 'VS Code', 'Postman'] },
-  ];
 
   return (
     <section id="about" className="py-20 relative">
@@ -82,7 +75,7 @@ const About = () => {
                 whileHover={{ scale: 1.05 }}
                 className="bg-gray-800/50 backdrop-blur-sm p-3 md:p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300"
               >
-                <div className="text-blue-400 mb-2 md:mb-4">{skill.icon}</div>
+                <div className="text-blue-400 mb-2 md:mb-4"><skill.icon size={40} /></div>
                 <h3 className="text-md md:text-xl font-semibold mb-3">{skill.name}</h3>
                 <div className="space-y-2">
                   {skill.techs.map((tech) => (
