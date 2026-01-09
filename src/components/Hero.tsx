@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Download } from "lucide-react";
 import { useEffect, useState, useMemo } from "react";
-import { HERO_SOCIAL_MEDIA } from "../data/data";
+import { HERO_SOCIAL_MEDIA, RESUME_LINK } from "../data/data";
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState("");
@@ -98,19 +98,20 @@ const Hero = () => {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Get In Touch
             </motion.a>
             <motion.a
-              href="https://drive.google.com/file/d/1nhlHnOLFR-UNeHtZ01y63RCPXGD2Re5R/view?usp=sharing"
+              href={RESUME_LINK}
               target="_blank"
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="border-2 border-gray-500 px-8 py-3 rounded-full font-semibold hover:border-white hover:bg-white hover:text-gray-900 transition-all duration-300 ml-0"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 border-2 border-gray-500 px-8 py-3 rounded-full font-semibold hover:border-white hover:bg-white hover:text-gray-900 transition-all duration-300 ml-0"
             >
-              View Resume
+              Resume <Download />
             </motion.a>
           </motion.div>
 

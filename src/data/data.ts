@@ -133,3 +133,5 @@ export const skills: TSkill[] = [
   { icon: Database , name: 'Database', techs: ['MongoDB', 'PostgreSQL', 'MySQL', 'TypeORM'] },
   { icon: Globe , name: 'Tools & Others', techs: ['Git', 'GitHub', 'VS Code', 'Postman', 'AWS'] },
 ];
+
+export const RESUME_LINK = `https://drive.google.com/uc?export=download&id=1nhlHnOLFR-UNeHtZ01y63RCPXGD2Re5R`
