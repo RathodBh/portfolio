@@ -135,3 +135,4 @@ export const skills: TSkill[] = [
 ];
 
 export const RESUME_LINK = `https://drive.google.com/uc?export=download&id=1nhlHnOLFR-UNeHtZ01y63RCPXGD2Re5R`
+export const LOGO_URL = `https://drive.google.com/file/d/1mxvET8CMjxwVovL07c60g2O_nq8svCRe/view?usp=sharing`;
