@@ -103,13 +103,14 @@ const Hero = () => {
               Get In Touch
             </motion.a>
             <motion.a
-              href="/Bhavesh_rathod_resume.pdf"
+              href="https://drive.google.com/file/d/1nhlHnOLFR-UNeHtZ01y63RCPXGD2Re5R/view?usp=sharing"
+              target="_blank"
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="border-2 border-gray-500 px-8 py-3 rounded-full font-semibold hover:border-white hover:bg-white hover:text-gray-900 transition-all duration-300 ml-0"
             >
-              Download CV
+              View Resume
             </motion.a>
           </motion.div>
 
