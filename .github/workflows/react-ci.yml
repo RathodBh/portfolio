@@ -1,41 +1,32 @@
-name: React CI (Vite)
+name: React CI + CD (GitHub Pages)
 
 on:
   push:
-    branches:
-      - ci-cd-test
-  pull_request:
     branches:
       - ci-cd-test
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run ESLint
-        run: npm run lint
-
-      - name: Run tests
-        run: npm test
-
-      - name: Build React app
-        run: npm run build
-
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+          node-version: 18
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
         with:
-          name: bhavesh-portfolio-build
           path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v4
