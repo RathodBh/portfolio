@@ -134,5 +134,5 @@ export const skills: TSkill[] = [
   { icon: Globe , name: 'Tools & Others', techs: ['Git', 'GitHub', 'VS Code', 'Postman', 'AWS'] },
 ];
 
-export const RESUME_LINK = `https://drive.google.com/uc?export=download&id=1nhlHnOLFR-UNeHtZ01y63RCPXGD2Re5R`
+export const RESUME_LINK = `https://drive.google.com/uc?export=download&id=1-y012ZL_-26QCCf-IEa8Z2ji-qSJEfUg`
 export const LOGO_URL = `https://drive.google.com/file/d/1mxvET8CMjxwVovL07c60g2O_nq8svCRe/view?usp=sharing`;
