@@ -83,7 +83,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Passionate Full Stack Developer with 2.6 years of experience
+            Passionate Full Stack Developer with 3+ years of experience
             crafting innovative web solutions using MERN stack. Currently
             building amazing products at esparkBiz in Ahmedabad.
           </motion.p>
